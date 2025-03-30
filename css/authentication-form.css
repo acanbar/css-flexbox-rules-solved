@@ -12,14 +12,20 @@ body {
 
 .content {
   padding: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  
 }
 
 h2 {
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 p {
   font-weight: bold;
+  padding-bottom: 30px;
 }
 
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
@@ -29,6 +35,14 @@ form {
   padding: 20px;
 }
 
+.form-input-control {
+    display: flex;
+    flex-direction: column ;
+    padding-bottom: 30px;
+    width: 100%;
+    gap: 6px;
+}
+
 .subtext {
   color: #a9a9a9;
   font-weight: unset;
@@ -36,7 +50,17 @@ form {
 
 #sign-in,
 #sign-up {
-  width: 100%;
+  width: 100%;                                                         
+}
+
+#sign-in {
+  display: flex;
+  flex-direction: column;
+}
+
+#sign-up {
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -44,8 +68,19 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  font-weight: 500;
+  color: red
+}
+
 label {
   font-weight: bold;
+  padding: 0 0 6px;
+}
+.form-checkbox-control { padding-bottom: 30px; }
+
+.form-checkbox-control label, .form-radio-control label {
+  font-weight: normal;
 }
 
 input {
@@ -61,13 +96,21 @@ input[type="radio"] {
   padding: 0;
 }
 
+.form-submit-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 30px;
+}
+
 input[type="submit"] {
   width: unset;
   height: unset;
   padding: 14px 20px;
   background: #335eea;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   border: 1px solid #335eea;
   border-radius: 8px;
   appearance: none;
@@ -77,9 +120,19 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background: #294bbb;
+  background: #29bb49;
 }
 
-.form select {
+.form-group-horizontal-control {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.gender {
+  margin-bottom: 10px;
+}
+
+#city, #state {
   height: 30px;
 }

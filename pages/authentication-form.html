@@ -28,13 +28,13 @@
           <p class="subtext">for existing users</p>
         </div>
         <!-- Sign IN form starts here -->
-        <form id="sign-in-form">
+        <form id="sign-in-form" action="/#" method="post">
           <div class="form-input-control">
             <label for="login-field">Login</label>
             <input
               type="email"
               id="login-field"
-              placeholder="use your email as login"
+              placeholder="Please enter an email"
               required
             />
           </div>
@@ -43,7 +43,7 @@
             <input
               type="password"
               id="password-field"
-              placeholder="passwords must match"
+              placeholder="Passwords must match"
               minlength="8"
               required
             />
@@ -102,7 +102,7 @@
             <input
               type="password"
               id="confirm-password"
-              placeholder="passwords must match"
+              placeholder="Passwords must match"
               minlength="8"
               maxlength="20"
               required
@@ -143,7 +143,7 @@
             </div>
           </div>
           <div class="form-input-control">
-            <p>Gender</p>
+            <p class="gender">Gender</p>
             <div class="form-group-vertical-control">
               <div class="form-radio-control">
                 <input type="radio" id="male" name="gender" value="male" />
